@@ -34,6 +34,7 @@ npm i
 
 ### Testing
 ```
+npx hardhat node
 npm run test
 ```
 
@@ -85,7 +86,9 @@ function verifySchnorr(bytes32 hash, bytes memory sig) internal pure returns (bo
 
 We explain how ecrecover works and why it is needed later [in this document](#ecrecover).  
 Let's send a request to the local hardhat node. First run in the terminal:  
-npx hardhat node  
+```
+npx hardhat node
+```
 Afterwards, here is part of the code:
 ```js
 import { ethers } from 'ethers'
